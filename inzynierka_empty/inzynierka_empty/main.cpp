@@ -112,7 +112,10 @@ int main() {
 		cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << endl;
 		return -1;
 	}
+	int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
 	glUseProgram(shaderProgram);
+
+	glUniform4f(vertexColorLocation, 0.5f, 0.0f, 0.0f, 0.0f);
 
 	glDeleteShader(vertexShader);
 	glDeleteShader(fragmentShader);

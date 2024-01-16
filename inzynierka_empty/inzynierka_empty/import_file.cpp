@@ -7,8 +7,9 @@ vector<float> import_object(string path) {
 	if (objectFile.is_open()) {
 		string line = "";
 		while (getline(objectFile, line)) {
-			
+			//DO STUFF
 		}
 	}
 	objectFile.close();
+	return object;
 }

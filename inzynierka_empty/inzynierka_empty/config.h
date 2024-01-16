@@ -6,6 +6,9 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sstream>
+#include "Shader.cpp"
+#include "Mesh.cpp"
 
 using namespace std;
 
